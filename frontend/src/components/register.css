@@ -1,0 +1,48 @@
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.registerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  gap: 30px;
+}
+.registerWrapper {
+  background-color: #a2ad91;
+  border: 1px solid #a2ad91;
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+  color: #3a2d32;
+  width: 100%;
+}
+.submitBtn {
+  text-align: center;
+  background-color: #3a2d32;
+  border: 1px solid #3a2d32;
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+  color: #a2ad91;
+  width: 100%;
+  cursor: pointer;
+}
+.error {
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: red;
+}
+.errorWrapper {
+  width: 100%;
+}
+.title2 {
+  margin-top: 20px;
+}
