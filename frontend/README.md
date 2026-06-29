@@ -1,16 +1,147 @@
-# React + Vite
+# 🔐 Login & Registration System (Fullstack Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo
 
-Currently, two official plugins are available:
+Frontend (Vercel):  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://login-system-zpb7.vercel.app/
 
-## React Compiler
+Backend (Render):  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://login-system-ty4c.onrender.com/
 
-## Expanding the ESLint configuration
+## 📌 About the project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a fullstack web application that allows users to:
+
+- Register a new account (email, login, password)
+  
+- Login with existing credentials
+  
+- Validate input data on frontend and backend
+  
+- Store users securely in a MongoDB database
+
+
+The project simulates a real authentication system used in modern web applications.
+
+## 🧠 Features
+
+### Frontend (React + Vite)
+
+- React functional components
+  
+- React Router (navigation between pages)
+  
+- useState for state management
+  
+- Form validation (email, password length, required fields)
+  
+- API communication with backend (fetch)
+  
+- Conditional rendering of error messages
+  
+- Redirect after successful login (useNavigate)
+
+### Backend (Node.js + Express)
+
+- REST API (register/login routes)
+  
+- Express server
+  
+- MongoDB integration (Mongoose)
+  
+- Password hashing with bcrypt
+  
+- User validation (duplicate email/login check)
+  
+- Input validation (email format, password length)
+  
+- CORS configuration for frontend communication
+  
+
+### Database (MongoDB Atlas)
+
+- Cloud database (MongoDB Atlas)
+  
+- User schema with:
+  
+  - email
+    
+  - login
+    
+  - hashed password
+
+
+## 🛠 Tech Stack
+
+**Frontend:**
+
+- React
+  
+- Vite
+  
+- React Router
+  
+- JavaScript (ES6+)
+  
+- CSS
+
+**Backend:**
+
+- Node.js
+  
+- Express.js
+  
+- MongoDB + Mongoose
+  
+- bcrypt
+  
+- dotenv
+  
+- cors
+
+**Deployment:**
+
+- Vercel (frontend)
+  
+- Render (backend)
+  
+- MongoDB Atlas (database)
+
+
+## 🔐 Authentication Flow
+
+1. User registers via frontend form
+   
+2. Data is sent to Express API
+   
+3. Backend validates input
+   
+4. Password is hashed using bcrypt
+   
+5. User is saved in MongoDB
+    
+6. During login:
+    
+   - backend checks user
+     
+   - compares hashed password
+     
+   - returns success response
+
+
+
+
+
+## 📡 API Endpoints
+
+### Register user
+
+POST /register
+
+
+### Login user
+
+POST /login
+
